@@ -20,7 +20,7 @@ function App() {
         </div>
         <animated.div style={fade}>
           <h1>AWS Cloud Clubs Inha</h1>
-          <h2>Hio</h2>
+          <h2>Change Me</h2>
         </animated.div>
       </header>
     </div>
