@@ -1,0 +1,19 @@
+# 버전 정보
+version: 0.2
+
+# 빌드 단계를 정의
+phases:
+  # 빌드 전 단계 - 필요한 패키지 설치
+  pre_build:
+    commands:
+      - npm install
+  # 빌드 단계 - 빌드 명령어 수행
+  build:
+    commands:
+      - npm run build
+
+# 빌드 후 생성된 결과물
+artifacts:
+  files:
+    - '**/*' # 모든 파일과 디렉토리를 포함
+  base-directory: build # 결과물이 위치한 기본 디렉토리는 'build'
